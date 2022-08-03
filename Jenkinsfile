@@ -4,11 +4,12 @@ pipeline
 
     stages 
     {
-        stage('Build') 
+        stage('Verifying Cypress') 
         {
             steps 
             {
-                sh "npx cypress verify"
+                git url: 'https://github.com/968ms-Error/Cypress.git'
+                sh 'npx cypress verify'
             }
         }
     }
