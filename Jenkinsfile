@@ -8,7 +8,7 @@ pipeline
         {
             steps 
             {
-                git url: 'https://github.com/968ms-Error/Cypress.git'
+                git 'https://github.com/968ms-Error/Cypress.git'
                 sh 'npx cypress verify'
             }
         }
